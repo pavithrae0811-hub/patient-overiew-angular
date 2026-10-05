@@ -1,0 +1,129 @@
+@import "tailwindcss";
+
+:root {
+  --page-bg: #edf4fa;
+  --navy: #17304d;
+  --muted: #72859d;
+  --blue: #1478cf;
+  --border: #d9e4ee;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--page-bg);
+  color: var(--navy);
+}
+
+button, input {
+  font: inherit;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.datatable-body-row {
+  cursor: pointer;
+}
+
+.datatable-body-row:hover {
+  background: #f6faff !important;
+}
+
+.ngx-datatable.material {
+  box-shadow: none !important;
+}
+
+.ngx-datatable.material .datatable-header {
+  background: #f7f9fb;
+  border-bottom: 1px solid #dce6ef;
+}
+
+.ngx-datatable.material .datatable-header .datatable-header-cell {
+  color: #60748d;
+  font-size: 13px;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .02em;
+}
+
+.ngx-datatable.material .datatable-body .datatable-body-row {
+  border-bottom: 1px solid #edf1f5;
+}
+
+.ngx-datatable.material .datatable-body .datatable-body-cell {
+  color: #233b57;
+  font-size: 14px;
+}
+
+.status-badge {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.status-green { background: #dff4ea; color: #11734e; }
+.status-orange { background: #fff0db; color: #a44f00; }
+.status-blue { background: #e5f0ff; color: #1b62a3; }
+.status-gray { background: #edf2f6; color: #687c93; }
+
+.attention {
+  background: #fff0dd;
+  color: #a55b08;
+}
+
+.complete {
+  background: #dff3e9;
+  color: #15764f;
+}
+
+.checkbox-square {
+  width: 25px;
+  height: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  border: 1px solid #d7e2ec;
+  background: #fff;
+  color: #fff;
+  font-weight: 900;
+}
+
+.checkbox-square.checked {
+  border-color: transparent;
+  background: #1673c9;
+}
+
+.checkbox-square.green { background: #20ad79; }
+.checkbox-square.orange { background: #ff941c; }
+.checkbox-square.cyan { background: #25a9df; }
+
+.icon-button {
+  width: 30px;
+  height: 30px;
+  border: 0;
+  background: transparent;
+  color: #1478cf;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.icon-button:hover {
+  background: #eaf4fd;
+}
+
+@media (max-width: 1100px) {
+  .page-content {
+    min-width: 1100px;
+  }
+}
